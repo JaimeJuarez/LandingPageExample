@@ -1,0 +1,265 @@
+@font-face {
+    font-family: oswaldfont;
+    src: url('../fonts/Oswald-VariableFont_wght.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+}
+
+.text-nav {
+    color: #CCCCCC;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+body::-webkit-scrollbar {
+    background: rgba(0, 0, 0, 0);
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #d2d2d2;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #79168d;
+}
+
+.img-callcenter-container {
+    padding-left: var(--bs-gutter-x, -0.25rem) !important;
+    position: relative;
+    width: 100%;
+}
+
+.infopage-container {
+    padding-left: var(--bs-gutter-x, -0.25rem) !important;
+    margin-top: 2%;
+    top: 0;
+    z-index: -1;
+}
+
+
+/* .infopage2 h4,
+.infopage2 h1 {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+} */
+
+.img-callcenter-container img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 570px;
+    width: 100%;
+}
+
+.aboutinfo1 {
+    padding-bottom: 7%;
+}
+
+.font-main,
+h1 {
+    font-family: oswaldfont;
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+
+.title {
+    text-align: left;
+}
+
+.secondPage {
+    background-color: #391440;
+}
+
+.text,
+.subtitle {
+    color: white;
+}
+
+.title {
+    color: #ffce0b;
+}
+
+.imginfopage {
+    display: flex;
+    margin-left: auto;
+}
+
+.btn-read-results {
+    font-family: oswaldfont;
+    letter-spacing: 1.1px;
+    width: 125px;
+    height: 45px;
+    border-radius: 0% !important;
+}
+
+.aboutSection {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+}
+
+.results1 {
+    line-height: 1.8;
+}
+
+.imgyellow-cont {
+    order: 2;
+}
+
+.results1 {
+    order: 1;
+}
+
+.nav-style {
+    position: fixed !important;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    top: 0;
+}
+
+.results-section {
+    background-color: white;
+}
+
+.imgyellow {
+    width: 100%;
+    max-width: 369px;
+    max-height: 431px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.img-team {
+    width: 100% !important;
+    max-width: 320px;
+    max-height: 354px;
+}
+
+.team-main-content {
+    background-color: #391440;
+}
+
+.img-team-cont {
+    justify-content: center;
+    display: flex;
+}
+
+.team-img-cont {
+    padding: 10px 10px 10px 10px
+}
+
+.infoPartner {
+    background-color: #FFFF;
+    width: 330px;
+    text-align: center;
+    padding: 40px 20px 20px
+}
+
+.infoPartner p {
+    font-size: 18px;
+}
+
+@media(max-width:767px) {
+    .aboutinfo,
+    .aboutinfo1 {
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+}
+
+@media(max-width:767px) {
+    .title,
+    .subtitle {
+        text-align: center;
+    }
+}
+
+@media(max-width:991px) {
+    .results-content {
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+}
+
+@media(max-width:991px) {
+    .imgyellow-cont {
+        order: 2!important;
+    }
+}
+
+@media(max-width:991px) {
+    .results1 {
+        order: 1 !important;
+    }
+}
+
+@media(max-width: 991px) {
+    .btn-read-results {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex !important;
+        justify-content: center;
+    }
+}
+
+@media(max-width:991px) {
+    .img-callcenter-container {
+        order: 2 !important;
+    }
+}
+
+@media(max-width:991px) {
+    .infopage-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:991px) {
+    .imginfopage {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:991px) {
+    .infopage2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 345px;
+        align-items: center;
+    }
+}
+
+@media(max-width:991px) {
+    .infopage-container {
+        position: relative;
+    }
+}
+
+@media(max-width:991px) {
+    .img-callcenter-container img {
+        position: relative;
+    }
+}
