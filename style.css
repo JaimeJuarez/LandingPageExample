@@ -1,6 +1,6 @@
 @font-face {
     font-family: oswaldfont;
-    src: url('../fonts/Oswald-VariableFont_wght.ttf');
+    src: url('./Oswald-VariableFont_wght.ttf');
 }
 
 * {
