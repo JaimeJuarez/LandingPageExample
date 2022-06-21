@@ -9,12 +9,8 @@
     padding: 0;
 }
 
-body {
-    height: 100%;
-}
-
-.text-nav {
-    color: #CCCCCC;
+.texttitle {
+    font-family: oswaldfont;
 }
 
 body::-webkit-scrollbar-track {
@@ -47,14 +43,6 @@ body::-webkit-scrollbar-thumb:hover {
     z-index: -1;
 }
 
-
-/* .infopage2 h4,
-.infopage2 h1 {
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    display: flex;
-} */
 
 .img-callcenter-container img {
     position: absolute;
@@ -90,6 +78,12 @@ h1 {
 
 .title {
     color: #ffce0b;
+}
+
+.resulttitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 14px 0;
 }
 
 .imginfopage {
@@ -159,13 +153,25 @@ h1 {
     display: flex;
 }
 
+.contaninerteamgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 329px;
+}
+
 .team-img-cont {
     padding: 10px 10px 10px 10px
 }
 
 .infoPartner {
     background-color: #FFFF;
-    width: 330px;
+    width: 295px;
+    position: relative;
+    margin: auto;
+    top: -45px;
     text-align: center;
     padding: 40px 20px 20px
 }
@@ -174,7 +180,75 @@ h1 {
     font-size: 18px;
 }
 
+.teamparrafo {
+    width: 570px;
+    display: flex;
+    font-size: 1.07rem;
+    padding-bottom: 2%;
+    margin: auto;
+}
+
+.container-text-team {
+    margin: auto;
+}
+
+.about {
+    padding: 1em;
+    text-align: center;
+}
+
+.container-main-team {
+    display: grid;
+    max-width: 1500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(2, auto);
+    margin:auto;
+}
+
+.img-team {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.team-work {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.social-media-icons {
+    white-space: nowrap;
+    width: auto;
+    min-width: 68px;
+    margin: auto;
+    position: relative;
+}
+
+.social-media-icons a {
+    text-decoration: none;
+}
+
+.social-media-icons a span svg {
+    fill: #ffce0b;
+    width: 35px;
+}
+
+.social-media-icons a span {
+    height: 100%;
+}
+
+.infoPartner h6 {
+    color: #ffce0b;
+    font-weight: 600;
+    font-size: 19px;
+}
+
 @media(max-width:767px) {
+
     .aboutinfo,
     .aboutinfo1 {
         flex-wrap: wrap;
@@ -185,6 +259,7 @@ h1 {
 }
 
 @media(max-width:767px) {
+
     .title,
     .subtitle {
         text-align: center;
@@ -202,7 +277,7 @@ h1 {
 
 @media(max-width:991px) {
     .imgyellow-cont {
-        order: 2!important;
+        order: 2 !important;
     }
 }
 
@@ -247,7 +322,7 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-width: 345px;
+        width: auto;
         align-items: center;
     }
 }
@@ -261,5 +336,48 @@ h1 {
 @media(max-width:991px) {
     .img-callcenter-container img {
         position: relative;
+    }
+}
+
+@media(max-width:1400px) {
+    .container-main-team {
+        display: flex;
+        max-width: 1000px;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:991px) {
+    .team-work {
+        padding-bottom: 2em;
+    }
+}
+
+@media(max-width:991px) {
+    .about {
+        padding: 0.5em;
+        padding-bottom: 2em;
+    }
+}
+
+@media(max-width:991px) {
+    .font-main {
+        font-size: 3.2em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+@media(max-width:591px) {
+    .font-main {
+        font-size: 2.5em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
     }
 }
