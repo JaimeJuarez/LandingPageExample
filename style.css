@@ -63,12 +63,9 @@ h1 {
     font-weight: 700;
 }
 
-.title {
-    text-align: left;
-}
-
 .secondPage {
     background-color: #391440;
+    padding: 1px;
 }
 
 .text,
@@ -78,6 +75,7 @@ h1 {
 
 .title {
     color: #ffce0b;
+    text-align: left;
 }
 
 .resulttitle {
@@ -205,7 +203,7 @@ h1 {
     align-items: center;
     grid-template-columns: repeat(3, 25%);
     grid-template-rows: repeat(2, auto);
-    margin:auto;
+    margin: auto;
 }
 
 .img-team {
@@ -246,7 +244,67 @@ h1 {
     font-weight: 600;
     font-size: 19px;
 }
+.partners-section{
+    padding-top: 3em;
+}
+.partners-section-title h1{
+    text-align: center;
+    color: #ffce0b;
+    font-size: 3rem;
+}
+.container-partners-images{
+    display: grid;
+    grid-template-columns: repeat(5, 15%);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
 
+.container-partners-images img{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info-footer{
+    width: 100%;
+    /* max-width: 1140px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-footer-divtext{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.mail-contact{
+    color: rgb(229, 157, 231);
+    text-decoration: none;
+    font-size: 17px;
+}
+.mail-contact:hover{
+    color: #dddddd;
+}
+.container-social-media{
+    display: grid;
+    grid-template-columns: repeat(4, 15%);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.8em;
+    padding-bottom: 2em;
+}
+.container-social-media a {
+    display: flex;
+    justify-content: center;
+}
+.container-social-media a svg{
+    fill: #ffce0b;
+    width: 45px;
+}
 @media(max-width:767px) {
 
     .aboutinfo,
@@ -372,6 +430,7 @@ h1 {
         width: 100%;
     }
 }
+
 @media(max-width:591px) {
     .font-main {
         font-size: 2.5em;
@@ -381,3 +440,32 @@ h1 {
         width: 100%;
     }
 }
+
+@media(max-width:991px) {
+    .container-partners-images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(max-width:991px) {
+    .container-partners-images div{
+        width: 220px;
+        margin: 20px;
+    }
+}
+@media(max-width:930px) {
+    .info-footer{
+     flex-direction: column;
+    }
+}
+@media(max-width:930px) {
+    .info-footer h1, h5{
+     text-align: center;
+     font-size: 2.3em;
+    }
+}
+
+
